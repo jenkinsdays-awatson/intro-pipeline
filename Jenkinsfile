@@ -32,6 +32,11 @@ pipeline {
         }
       }
     }
+    stage('Checkpoint') {
+      steps {
+        checkpoint 'Checkpoint'
+      }
+    }
     stage('Get Kernel') {
       steps {
         script {
